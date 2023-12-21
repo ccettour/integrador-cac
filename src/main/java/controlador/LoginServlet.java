@@ -65,20 +65,5 @@ public class LoginServlet extends HttpServlet {
                 e.printStackTrace();
             }
         }
-        
-        // Bloque try-with-resources
-        /*
-        try (Connection conn = ConexionDB.conectar();
-             PreparedStatement pstmt = conn.prepareStatement(sql);
-             ResultSet rs = pstmt.executeQuery()) {
-            pstmt.setString(1, username);
-            pstmt.setString(2, password);
-
-            return rs.next(); // Si hay un resultado, las credenciales son correctas
-        } catch (SQLException e) {
-            e.printStackTrace();
-            return false;
-        }
-        */
     }
 }

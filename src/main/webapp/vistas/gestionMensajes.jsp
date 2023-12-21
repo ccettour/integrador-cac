@@ -8,6 +8,7 @@
         <meta charset="UTF-8">
         <title>Gestión de Mensajes</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../styles/styles.css">
     </head>
     <body>
         <div class="container mt-5">
@@ -42,7 +43,7 @@
                                 <!-- Formulario para eliminar -->
                                 <form action="GestionMensajeServlet" method="post">
                                     <input type="hidden" name="id" value="<%= m.getIdMensaje()%>">
-                                    <button type="submit" class="btn btn-danger btn-block">Eliminar</button>
+                                    <button type="submit" class="btn btn-light">Eliminar</button>
                                 </form>
                             </div>
                         </td>
@@ -59,7 +60,7 @@
                     %>
                 </tbody>
             </table>
-            <a href="../" class="btn btn-success">Volver</a>   
+            <a href="../" class="btn btn-light">Volver</a>   
         </div>
     </body>
 </html>

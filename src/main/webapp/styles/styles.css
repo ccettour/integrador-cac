@@ -116,7 +116,9 @@ p {
     font-size: 15px;
 }
 
-
+.table{
+    color: gainsboro;
+}
 
 /*BOTONES*/
 .btn-light {
